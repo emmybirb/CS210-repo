@@ -1,3 +1,5 @@
 *~
 fibonacci-recursive
 fibonacci-iterative
+build/*
+a.out

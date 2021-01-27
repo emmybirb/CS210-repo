@@ -1,13 +1,14 @@
 /*
  * Fibonacci through iteration
- * 
- * Complete this code (see the textbook for implementation)
  */
 
 #include <iostream>
 #include <chrono> // C++11
 
 int fibonacci(int n) {
+  /* 
+   * Complete this code (see the textbook for implementation)
+   */
 }
 
 int main() {
