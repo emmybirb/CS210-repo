@@ -6,7 +6,7 @@
 #include <iostream>
 #include <chrono> // C++11
 
-int fibonacci(int n) {
+int fib(int n) {
   /* 
    * if (input <= 1)
    *   return nth term;
@@ -15,17 +15,17 @@ int fibonacci(int n) {
    *   for the two numbers before n and keep going until 
    *   it reaches the smallest number in the sequence)
    */
-   
+
    if (n<= 1)
     return n;
   else 
-    return fib(n-1) + Fib(n-2);
+    return fib(n-1) + fib(n-2);
 }
 
 int main() {
-  auto start = std::chrono::steady_clock::now();
-  std::cout << "f(42) = " << fibonacci(42) << '\n';
-  auto end = std::chrono::steady_clock::now();
+  std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
+  std::cout << "f(42) = " << fib(42) << '\n';
+  std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
   std::chrono::duration<double> elapsed_seconds = end-start;
   std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
   return 0;

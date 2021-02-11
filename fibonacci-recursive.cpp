@@ -15,9 +15,9 @@ int fibonacci(int n) {
 }
 
 int main() {
-  auto start = std::chrono::steady_clock::now();
+  auto std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
   std::cout << "f(42) = " << fibonacci(42) << '\n';
-  auto end = std::chrono::steady_clock::now();
+  auto std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
   std::chrono::duration<double> elapsed_seconds = end-start;
   std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
   return 0;
